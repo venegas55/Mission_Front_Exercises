@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1 parte 2 LaunchX</title>
+</head>
+<body>
+    <h1>Bienvenido a la 2da parte</h1>
+    <H1>que pex aquaman</H1>
+    <h2>Aquí vamos a ver los formularios</h2>
+    <!--Las labels por alguna razón van ligadas a un input...
+        el 'for' de la etiqueta va ligado al 'id' del input
+        ***estudiar pa que sirve***-->
+    <h3>Ejemplos de inputs de caja</h3>
+
+    <!--para téxto-->
+    <p>Input de téxto (párrafo)</p>
+    <label for="inputTexto">Ejemplo de input de téxto (etiqueta)</label><br>
+    <input type="text" id="inputTexto" name="inputTexto">
+
+    <!--para correo-->
+    <p>Input de correo (párrafo)</p>
+    <label for="inputCorreo">Ejemplo de input de correo (etiqueta)</label><br>
+    <input type="email" id="inputCorreo" name="inputCorreo">
+
+     <!--para número OJO también acepta 'e' como exponencial-->
+     <p>Input de número (párrafo)</p>
+     <label for="inputNumero">Ejemplo de input de número (etiqueta)</label><br>
+     <input type="number" id="inputNumero" name="inputNumero">
+
+     <!--para password-->
+    <p>Input de password (párrafo)</p>
+    <label for="inputPassword">Ejemplo de input de password (etiqueta)</label><br>
+    <input type="password" id="inputPassword" name="inputPassword" minlength="8">
+
+    <!--para teléfono-->
+    <p>Input de teléfono (párrafo)</p>
+    <label for="inputPhone">Ejemplo de input de teléfono (etiqueta)</label><br>
+    <input type="tel" id="inputPhone" name="inputPhone" maxlength="10">
+
+    <!--para URL-->
+    <p>Input de URL (párrafo)</p>
+    <label for="inputURL">Ejemplo de input de URL (etiqueta)</label><br>
+    <input type="url" id="inputURL" name="inputURL"><br><br>
+
+    <hr>
+
+    <h3>Ejemplos de input de selección</h3>
+    <!--para checkbox-->
+    <!-- input checkbox solo saca la caja
+        para poner a que refiere hay que hacerle una label
+        OJO la label se tiene que poner después del input -->
+    <p>Input de checkbox (párrafo)</p>
+    <label for="inputCheckbox">Ejemplo de input de checkbox (etiqueta)</label><br>
+    <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+    <label for="topping1">Tacos con Cebolla</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Cilantro">
+    <label for="topping2">Tacos con Cilantro</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+    <label for="topping3">Tacos con Salsa</label><br>
+
+    <!-- Para radio button
+        mismo caso que checkbox -->
+    <p>Input de radio (párrafo)</p>
+    <label for="inputRadio">Ejemplo de input de radio (etiqueta)</label><br>
+    <input type="radio" id="roja" name="salsas" value="Roja">
+    <label for="roja">Roja</label><br>
+    <input type="radio" id="verde" name="salsas" value="Verde">
+    <label for="verde">Verde</label><br>
+    <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+    <label for="guacamole">Guacamole</label><br><br>
+
+    <!-- Para selección drop down list -->
+    <p>Input de drop down list (parrafo)</p>
+    <label for="tacos">De qué la orden?</label>
+    <select id="tacos" name="tacos">
+        <option value="suadero">Suadero</option>
+        <option value="pastor">Pastor</option>
+        <option value="campechanos">Campechanos</option>
+        <option value="tripa">Tripa</option>
+    </select><br><br>
+
+    <!-- Para drop down list libre
+        te da opciones y aparte puedes escribir :S -->
+        <p>Input de drop down list libre (párrafo)</p>
+        <label for="refresco">Elige tu refresco favorito</label><br>
+        <input list="refresco">
+        <datalist id="refresco">
+            <option value="Coca-Cola">
+            <option value="Manzana">
+            <option value="Naranja">
+            <option value="Mango">
+            <option value="Guayaba">
+        </datalist>
+        <br><br>
+        
+    
+    <br><a href="./practica 1.html">Regresar a primera parte</a><br><br>
+    <br><a href="./03 practica 1 parte 3 cheat.html">para hacer trampa haz click Aquí</a><br><br>
+
+</body>
+</html>

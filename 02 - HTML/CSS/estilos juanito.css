@@ -1,0 +1,114 @@
+        /* Para importar una fuente local */
+        @font-face {
+            font-family: "myFirstFont";
+            src: url(../Fonts/04B_30__.TTF);
+        }
+        /* Para que todo tenga la fuente declarada */
+        *{
+            font-family: "myFirstFont";
+        }
+        /* Estilo para invertir colores */
+        .invertColor {
+            filter: invert(1);
+        }
+        /* Estilo para cambiar el fondo negro y centrar texto */
+        .blackBkgd {
+            color: white;
+            background-color: rgb(66, 65, 65);
+            align-self: center;
+            text-align: center;
+        }
+        /* Estilo para que la tabla tenga bordes y esté centrada */
+        th, td, .tableFormat{
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px dotted red;
+            border-collapse: collapse;
+            color: white;
+        }
+        /* Estilo para centrar el texto en las filas */
+        tr.centerContent{
+            text-align: center;
+        }
+        /* Estilo para dar espacio al encabezado de la tabla */
+        th.giveSpace{
+        padding: 10px;
+        }
+        /* acortar el padding */
+        h1.shortPadding, h2.shortPadding, .shortPadding{
+            margin: 0px;
+            padding: 10px;
+        }
+        /* la lista sin esto sale centrada pero las vi;etas hasta la izquierda, y al parecer los puntos de las viñetas están en la parte de margen, al jalar el margen izquierdo a donde quiero y realinendo el texto a la izquierda (sobreescribendo la clase 'blackBkgd' en la <section>, logré el efecto visualizado.... NO HACER ESTO EN EL FORMULARIO */
+        ul.centerLeft{
+            margin-left: 412px;
+            margin-right: auto;
+            text-align: left;
+            padding: 5px;
+        }
+        /* aquí quité la clase de la sección y solo alinee el botón con esta clase, esto lo uso en la página form_pedido también */
+        a.align{
+            margin-left: 400px;
+        }
+        /* de aquí en adelante fuí creando los estilos con las restricciones según los he tenido que utilizar... espero no sobreescribir nada de arriba.... ¿tal vez sea bueno tener un .css por cada página? */
+        body.background{
+            background-color: rgb(66, 65, 65);
+        }
+        h1.centerWhite, h2.centerWhite, h3.centerWhite{
+            text-align: center;
+            color: white;
+        }
+        section.alignWhite{
+            margin-left: 400px;
+            margin-right: 400px;
+            color: white;
+        }
+        p.bold{
+            font-weight: 700;
+            color: rgb(190, 190, 190);
+        }
+        input.boxWidthSmall{
+            width: 50px;
+        }
+        img.kitchen{
+            position: absolute;
+            inset: 10px;
+            left: 15%;
+            width: 150px;
+        }
+        a.alignLeft{
+            position: absolute;
+            right: 20%;
+        }
+        div.sabores{
+            background-color: rgb(48, 48, 48);
+            position: absolute;
+            left: 15%;
+            width: 30%;
+            height: 300px;
+            color: rgb(199, 199, 199);
+            
+        }
+        div.toppings{
+            background-color: rgb(48, 48, 48);
+            position: absolute;
+            right: 15%;
+            width: 30%;
+            height: 300px;
+            color: rgb(199, 199, 199);
+        }
+        ul.inventory{
+            position: absolute;
+            left: 10%;
+
+        }
+        section.pedidos{
+            position: relative;
+            top: 350px;
+        }
+        a.kitchen{
+            position: absolute;
+            top: 10px;
+
+        }
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estilos juanito.css">
+    <title>pedido</title>
+</head>
+<body class="background">
+    <a class="align" href="./client_main.html"><button>Regresar</button></a>
+    <h1 class="centerWhite">haz tu pedido aquí</h1>
+    <h2 class="centerWhite">Información del cliente</h2>
+    <!-- Sección para pedir datos al cliente -->
+    <section class="alignWhite">
+        <form action="/accion.js" id="clientInfo" method="post">
+            <label for="nombreCliente">Nombre completo</label>
+            <input type="text" id="nombreCliente" name="nombreCliente" placeholder="nombre">
+            <label for="telCliente">Teléfono a 10 digitos</label>
+            <input type="tel" name="telCliente" id="telCliente" placeholder="teléfono a 10 digitos" maxlength="10" min="0">
+            <label for="emailCliente">Correo electrónico</label>
+            <input type="email" name="emailCliente" id="emailCliente">
+
+            <h3 class="centerWhite">Domicilio</h3>
+            <label for="ciudadCliente">Ciudad</label>
+            <select name="ciudadCliente" id="ciudadCliente">
+                <option value="Xalapa">Xalapa</option>
+                <option value="Banderilla">Banderilla</option>
+                <option value="Veracruz">Veracruz</option>
+            </select><br>
+            <!-- el domicilio se debería de pedir de forma atómica, pero para este ejemplo esto es más que suficiente -->
+            <div>
+                <label for="direccionCliente">Dirección</label>
+                <textarea name="direccionCliente" id="direccionCliente" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+    </section>
+    <!-- Sección para levantar pedido -->
+    <section class="alignWhite">
+            <form action="/accion.js" id="pedido" method="post">
+            <div>
+                <p class="bold">Sabor de tu pastel</p>
+                <input type="checkbox" id="sabor1" name="sabor1" value="chocolate">
+                <label for="sabor1">Black Galaxy</label>
+                <input type="checkbox" id="sabor2" name="sabor2" value="red velvet">
+                <label for="sabor2">Mercury Red</label><br>
+                <input type="checkbox" id="sabor3" name="sabor3" value="moras azules">
+                <label for="sabor3">Neptune Aqua</label><br>
+            </div>
+            <div>
+                <p class="bold">Topping</p>
+                <input type="checkbox" id="Topping1" name="Topping1" value="mermelada">
+                <label for="Topping1">Martian blood</label>
+                <input type="checkbox" id="Topping2" name="Topping2" value="vainilla">
+                <label for="Topping2">Unicorn dump</label><br>
+                <input type="checkbox" id="Topping3" name="Topping3" value="fondant">
+                <label for="Topping3">Seal Skin</label>
+                <input type="checkbox" id="Topping3" name="Topping3" value="fondant decorado">
+                <label for="Topping3">Tattoed Seal Skin</label><br>
+            </div>
+            <div>
+                <p class="bold">Tamaño</p>
+                <input type="checkbox" id="Tamaño1" name="Tamaño1" value="Chico">
+                <label for="Tamaño1">Chico $150</label><br>
+                <input type="checkbox" id="Tamaño2" name="Tamaño2" value="Mediano">
+                <label for="Tamaño2">Mediano $280</label><br>
+                <input type="checkbox" id="Tamaño3" name="Tamaño3" value="Grande">
+                <label for="Tamaño3">Grande $350</label><br>
+            </div>
+            <div>
+                <p class="bold">¿Cuantos?</p>
+                <input class="boxWidthSmall" type="number" name="cantidad" id="cantidad" min="1">
+                <label for="cantidad">pasteles</label>
+            </div><br><br>
+            <input type="reset"><br><br>
+        </form>
+        <input type="submit" value="submitForm">
+    </section>
+</body>
+</html>
