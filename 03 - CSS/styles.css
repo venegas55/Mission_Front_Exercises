@@ -2,8 +2,92 @@
 
 body {
     font-family: 'Fredoka';
+    
 }
-h1.titleMain {
+div.pageFormat1{
+    width: 75%;
+    margin: auto;
+
+
+}
+/* navBar Styles */
+div.containerNavBar{
+    display: flex;
+    border: solid black;
+    align-items: center;
+    /* justify-content: space-around; */
+    height: 75px;
+    width: auto;
+}
+h1.titleNav {
     color: #3959d7;
     font-weight: 700;
+    margin-left: 5%;
+    font-size: 25px;
+
+}
+
+.navOptions {
+    color: #697790;
+    display: flex;
+    text-size-adjust: 15px;
+    font-size: small;
+    justify-content: space-around;
+    flex-grow: 2;
+    margin-left: 10%;
+    font-size: 15px;
+
+}
+
+.button{
+    background: #3959d7;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 3px 8px #888888;
+    font-size: large;
+    margin-right: 5%;
+}
+/* Conteiner with info */
+.containerMain{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    border: solid black;
+    padding: 5px;
+}
+.titleMain{
+    font-size:xxx-large;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #1f3e72;
+}
+.containerMain .one{
+    font-size: large;
+    color: #6a7890;
+    text-align: justify;
+}
+div.mainLinks{
+    display: flex;
+    justify-content:space-around;
+}
+div.mainImg{
+    width: 50%;
+    position: right;
+    border: solid black;
+    background: blue;
+}
+
+div.schedule{
+    position: absolute;
+    top: 425px;
+    left: 200px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    border: solid black;
 }
