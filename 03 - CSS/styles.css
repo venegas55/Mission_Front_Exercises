@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+
+body {
+    font-family: 'Fredoka';
+}
+h1.titleMain {
+    color: #3959d7;
+    font-weight: 700;
+}
