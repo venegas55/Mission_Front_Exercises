@@ -91,3 +91,9 @@ div.schedule{
     display: flex;
     border: solid black;
 }
+div.brandsImg img{
+    display: flex;
+    width: 100%;
+    border: solid black;
+    margin-top: 30px;
+}
