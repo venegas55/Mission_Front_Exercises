@@ -52,6 +52,10 @@ h1.titleNav {
     font-size: large;
     margin-right: 5%;
 }
+.containerOne{
+    display: flex;
+}
+
 /* Conteiner with info */
 .containerMain{
     display: flex;
@@ -84,9 +88,9 @@ div.mainImg{
 
 div.schedule{
     position: absolute;
-    top: 425px;
-    left: 200px;
-    height: 50px;
+    top: 415px;
+    left: 250px;
+    height: 75px;
     align-items: center;
     display: flex;
     border: solid black;
@@ -95,5 +99,77 @@ div.brandsImg img{
     display: flex;
     width: 100%;
     border: solid black;
-    margin-top: 30px;
+    margin-top: 50px;
+}
+div.containerImg{
+    border: solid black;
+    width: 50%;
+    display: flex;
+}
+div.containerImg img{
+    width: 100%;
+    
+}
+/* Rest... */
+div.containerTwo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    grid-template-areas: "header header" "cards cards";
+    border: solid black;
+    width: 75%;
+    margin: auto;
+
+}
+.c1{
+    border: solid black;
+    background: pink;
+    grid-area: header;
+}
+.title{
+    color: #1f3e72;
+    font-size: xx-large;
+    margin-bottom: 25px;
+}
+.c2{
+    border: solid black;
+    background: pink;
+    grid-area: cards;
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    width: 200px;
+    height: 300px;
+    border: solid black;
+}
+.c3{
+    border: solid black;
+    background: pink;
+}
+.c4{
+    border: solid black;
+    background: pink;
+}
+.c5{
+    border: solid black;
+    background: pink;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.c6{
+    border: solid black;
+    background: pink;
+}
+.c7{
+    border: solid black;
+    background: pink;
+}
+.c8{
+    border: solid black;
+    background: pink;
+}
+.c9{
+    border: solid black;
+    background: pink;
 }
