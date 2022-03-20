@@ -2,10 +2,42 @@
 
 body {
     font-family: 'Fredoka';
+    background-image: url(./Assets/fondo.jpg);
+    background-size: cover;
+    background-repeat:repeat-y;
     
 }
+
+
+.caja{
+    position: absolute;
+    /* display: flex;
+    flex-flow: column wrap; */
+    top: 85px;
+    left: 1000px;
+    justify-content: right;
+    align-items: right;
+    width: 520px;
+    height: 450px;
+    object-fit: contain;
+    object-position: center center;
+}
+.imagenTop{
+    display: flex;
+    
+}
+
+img.top{
+    position: relative;
+    
+    width: 520px;
+    height: 450px;
+    object-fit: cover;
+    display: flex;
+}
+
 div.pageFormat1{
-    width: 75%;
+    width: 100%;
     margin: auto;
 
 
@@ -13,11 +45,11 @@ div.pageFormat1{
 /* navBar Styles */
 div.containerNavBar{
     display: flex;
-    border: solid black;
     align-items: center;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     height: 75px;
     width: auto;
+    background-color: #9cbefad5;
 }
 h1.titleNav {
     color: #3959d7;
@@ -52,17 +84,13 @@ h1.titleNav {
     font-size: large;
     margin-right: 5%;
 }
-.containerOne{
-    display: flex;
-}
-
 /* Conteiner with info */
 .containerMain{
     display: flex;
     width: 50%;
     flex-direction: column;
-    border: solid black;
     padding: 5px;
+    
 }
 .titleMain{
     font-size:xxx-large;
@@ -82,94 +110,300 @@ div.mainLinks{
 div.mainImg{
     width: 50%;
     position: right;
-    border: solid black;
     background: blue;
 }
 
 div.schedule{
     position: absolute;
-    top: 415px;
-    left: 250px;
-    height: 75px;
+    top: 440px;
+    height: 50px;
+    width: 1100px;
     align-items: center;
     display: flex;
-    border: solid black;
-}
-div.brandsImg img{
-    display: flex;
-    width: 100%;
-    border: solid black;
-    margin-top: 50px;
-}
-div.containerImg{
-    border: solid black;
-    width: 50%;
-    display: flex;
-}
-div.containerImg img{
-    width: 100%;
-    
-}
-/* Rest... */
-div.containerTwo{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 5px;
-    grid-template-areas: "header header" "cards cards";
-    border: solid black;
-    width: 75%;
-    margin: auto;
+    justify-content: space-around;
+    filter: blur(0px);
+    z-index: 1;
 
 }
-.c1{
-    border: solid black;
-    background: pink;
-    grid-area: header;
-}
-.title{
-    color: #1f3e72;
-    font-size: xx-large;
-    margin-bottom: 25px;
-}
-.c2{
-    border: solid black;
-    background: pink;
-    grid-area: cards;
+div.scheduleBackground{
+    position: absolute;
+    top: 420px;
+    height: 100px;
+    width: 1050px;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: white;
+    opacity: 50%;
+    filter: blur(4px);
+    
+
 }
-.box{
-    width: 200px;
-    height: 300px;
-    border: solid black;
+
+div.slider{
+    position: absolute;
+    top: 550px;
+    height: 100px;
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    
+    
 }
-.c3{
-    border: solid black;
-    background: pink;
+
+div.slider img{
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    opacity: 100%;
+    
 }
-.c4{
-    border: solid black;
-    background: pink;
+
+
+div.containerText{
+    position: absolute;
+    top: 700px;
+    height: 125px;
+    width: 50%;
+    flex-direction: column;
+    padding: 5px;
+     
 }
-.c5{
-    border: solid black;
-    background: pink;
-    grid-column-start: 1;
-    grid-column-end: 3;
+
+.benefits-container{
+    display: flex;
+    justify-content:space-around;
+    top: 750px;
+    
 }
-.c6{
-    border: solid black;
-    background: pink;
+
+.benefits{
+    display: flex;
+    position: absolute;
+    top: 850px;
+    padding: 5px;
+    justify-content: space-around;
+    
+    
 }
-.c7{
-    border: solid black;
-    background: pink;
+h2.titleSmall{
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #1f3e72;
 }
-.c8{
-    border: solid black;
-    background: pink;
+
+.textPrev{
+    display: flex;
 }
-.c9{
-    border: solid black;
-    background: pink;
+
+.benefit-1{
+    margin: 10px;
+    justify-content: space-around;
+    
+}
+
+.benefit-2{
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.benefit-3{
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.benefit-4{
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.caja2{
+    position: absolute;
+    top: 1000px;
+    left: 85px;
+    justify-content: right;
+    align-items: right;
+    width: 520px;
+    height: 750px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+img.center{
+    position: absolute;
+    width: 520px;
+    height: 750px;
+    object-fit: cover;
+    display: flex;
+    
+}
+
+div.containerPrep{
+    display: flex;
+    width: 50%;
+    float: right;
+}
+
+div.containerText2{
+    position: absolute;
+    top: 1100px;
+    height: 630px;
+    width: 50%;
+    flex-direction: column;
+    padding: 5px;
+    display: flex;
+    float: right;
+    
+}
+
+.prepLi{
+    border: solid #c4d4f015;
+    list-style: none;
+    margin: 10px;
+    width: 250px;
+    display: flex;    
+}
+
+.prepLiPar{
+    border: solid #c4d4f015;
+    list-style: none;
+    margin: 10px;
+    width: 250px;
+    flex-direction: column;
+}
+
+.prepPar{
+    opacity: 35%;
+}
+
+.caja3{
+    position: absolute;
+    top: 1750px;
+    left: 1000px;
+    justify-content: right;
+    align-items: right;
+    width: 520px;
+    height: 650px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+img.bottom{
+    position: absolute;
+    width: 520px;
+    height: 650px;
+    object-fit: cover;
+    display: flex;
+}
+
+.containerText3{
+    position: absolute;
+    top: 1750px;
+    height: 620px;
+    width: 50%;
+    flex-direction: column;
+    padding: 5px;  
+}
+
+h3.blue{
+    color: #3959d7;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+.grid div{
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 25px;
+
+}
+
+.buttonEmer{
+    background: #3959d7;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 3px 8px #888888;
+    font-size: large;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.vaccination div{
+    flex: auto;
+}
+
+.footerText{
+    color: #88888883;
+}
+
+.footer1{
+    position: absolute;
+    top: 2400px;
+    width: 50%;
+    height: 280px;
+    background-color: #9cbefad5;
+    align-content: center;
+
+}
+
+.footer2{
+    position: absolute;
+    top: 2680px;
+    width: 50%;
+    height: 50px;
+    margin-top: 0%;
+    background-color: #9cbefad5;
+}
+
+.footer3{
+    position: absolute;
+    top: 2400px;
+    left: 785px;
+    width: 50%;
+    height: 280px;
+    margin-top: 0%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    float: right;
+    justify-content: space-around;
+    background-color: #9cbefad5;
+}
+
+.gridFooter1{
+    display: grid;
+    
+}
+
+.gridFooter2{
+    display: grid;
+}
+
+.gridFooter3{
+    display: grid;
+}
+
+.footer4{
+    position: absolute;
+    top: 2680px;
+    width: 50%;
+    height: 50px;
+    margin-top: 0%;
+    left: 785px;
+    right: 10px;
+    background-color: #9cbefad5;
+    text-align: right;
 }
