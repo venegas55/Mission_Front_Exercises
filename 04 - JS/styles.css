@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+@font-face {
+    font-family: 'Orbitron', sans-serif;;
+    src: url(./Fonts/ARCADECLASSIC.TTF);
+    font-family: pokemon;
+    src: url(./Fonts/pokemon/Pokemon\ Solid.ttf);
+
+}
+
+h1{
+    height: fit-content;
+    font-family: pokemon;
+    font-size: 80px;
+    color: yellow;
+    background-color: black;
+    margin: auto;
+    text-shadow:    -5px 5px 0 blue,
+                    5px 5px 0 blue,
+                    5px -5px 0 blue,
+                    -5px -5px 0 blue
+
+}
+
+.main{
+    display: flexbox;
+    width: auto;
+}
+
+body{
+    background-color: rgb(55, 55, 55);
+    display: block;
+    font-family: 'Orbitron', sans-serif;;
+}
+
+
+.contenedorPokedex{
+    position: absolute;
+    text-align: center;
+    
+    
+}
+
+.bkgPokedex{
+    position: relative;
+    width: 1200px;
+    height: fit-content;
+}
+
+.pantalla{
+    position: inherit;
+    left: 125px;
+    top: 256px;
+    border: solid black;
+    height: 250px;
+    width: 375px;
+    background-color: white;
+    border-radius: 5%; 
+    z-index: 1;
+    margin: auto;
+}
+
+.pokemon{
+    position: relative;
+    top: 0px;
+    width: 180px;
+    right: 90px;
+    
+}
+.nombre{
+    font-size: 20px;
+    width: 50%;
+    justify-items: center;
+}
+
+div .numeroTipo{
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+div .contenedorStats{
+    position: absolute;
+    top: 40px;
+    left: 205px;
+    font-size: 15px;
+}
+
+.stats p{
+    text-align: left;
+
+}
+
+div .contenedorBuscar{
+    position: absolute;
+    z-index: 1;
+    left: 728px;
+    top: 283px;
+    
+}
+
+.buscar{
+    width: 370px;
+    height: 128px;
+    border-radius: 4%;
+    background-color: rgb(5, 47, 5);
+    font-size: 22px;
+    outline: auto;
+    font-family: 'Orbitron', sans-serif;;
+    
+}
+
+::placeholder{
+    color: white;
+    text-align: center;
+    opacity: 30%;
+    font-family: 'Orbitron', sans-serif;;
+    white-space: pre-line;
+    position: relative;    
+}
+
+.tipo {
+    margin: 0px;
+}
+
+.stats{
+    position: inherit;
+    list-style: none;
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    top: 5px;   
+}
+.stats p {
+    margin: 5px;
+}
+
+div .contenedorBoton{
+    position: absolute;
+    z-index: 1;
+    left: 936.6px;
+    top: 720px;
+}
+
+.boton{
+    width: 170px;
+    height: 60px;
+    border-radius: 7%;
+    background-color: rgb(5, 47, 5);
+    font-size: 15px;
+    border: solid white;
+    font-family: 'Orbitron', sans-serif;;
+}
+
+button{
+    color: white;
+    
+}
