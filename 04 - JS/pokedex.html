@@ -7,41 +7,44 @@
     <title>Pokedex LaunchX</title>
     <link rel="stylesheet" href="./styles.css">
     
+    
 
 </head>
 <body>
     <h1 style="text-align: center">Pokedex LaunchX</h1>
-    <div class="contenedorPokedex">
-        <div class="pantalla">
-            <p id="nombrePokemon" class="nombre"></p>
-            <img class="pokemon" src="./Assets/pokeball.png" alt="Pokemon" id="pokeImg">
-            <div class="numeroTipo">
-                <div class="contenedorNumero">
-                    <p id="numeroPokemon" class="nuemro"></p>
+    <div class="main">
+        <div class="contenedorPokedex">
+            <div class="pantalla">
+                <p id="nombrePokemon" class="nombre"></p>
+                <img class="pokemon" src="./Assets/pokeball.png" alt="Pokemon" id="pokeImg">
+                <div class="numeroTipo">
+                    <div class="contenedorNumero">
+                        <p id="numeroPokemon" class="nuemro"></p>
+                    </div>
+                    <div class="contenedorTipo">
+                        <p id="tipoPokemon" class="tipo"></p>  
+                    </div>
                 </div>
-                <div class="contenedorTipo">
-                    <p id="tipoPokemon" class="tipo"></p>  
+                <div class="contenedorStats">
+                    <div class="stats" id="statsPokemon">
+                        <p id="stats1"></p>
+                        <p id="stats2"></p>
+                        <p id="stats3"></p>
+                        <p id="stats4"></p>
+                        <p id="stats5"></p>
+                        <p id="stats6"></p>
+                    </div>
                 </div>
             </div>
-            <div class="contenedorStats">
-                <div class="stats" id="statsPokemon">
-                    <p id="stats1"><p>
-                    <p id="stats2"></p>
-                    <p id="stats3"></p>
-                    <p id="stats4"></p>
-                    <p id="stats5"></p>
-                    <p id="stats6"></p>
-                </div>
+            <div class="contenedorBuscar">
+                <input style="color: white; text-align: center;" class="buscar" type="text" placeholder="Ingresa el nombre ó # de Pokemon" id="pokeName" name="pokeName">
             </div>
-        </div>
-        <div class="contenedorBuscar">
-            <input style="color: white; text-align: center;" class="buscar" type="text" placeholder="Ingresa el nombre ó # de Pokemon" id="pokeName" name="pokeName">
-        </div>
-        <div class="contenedorBoton">
-            <button id="buscarEnter" class="boton" onclick="fetchPokemon()">Buscar Pokemon</button>
-        </div>
-        <img class="bkgPokedex" src="./Assets/pokedex.png" alt="fondoPokedex">
-    </div> 
+            <div class="contenedorBoton">
+                <button id="buscarEnter" class="boton" onclick="fetchPokemon()">Buscar Pokemon</button>
+            </div>
+            <img class="bkgPokedex" src="./Assets/pokedex.png" alt="fondoPokedex">
+        </div> 
+    </div>
 </body>
 <footer>
     <script src="./pokedex.js"></script>

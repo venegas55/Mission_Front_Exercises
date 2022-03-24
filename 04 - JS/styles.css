@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 @font-face {
-    font-family: arcade;
+    font-family: 'Orbitron', sans-serif;;
     src: url(./Fonts/ARCADECLASSIC.TTF);
     font-family: pokemon;
     src: url(./Fonts/pokemon/Pokemon\ Solid.ttf);
@@ -7,19 +9,28 @@
 }
 
 h1{
-    position: relative;
+    height: fit-content;
     font-family: pokemon;
     font-size: 80px;
     color: yellow;
-    background-color: blue;
-    margin: 0px;
+    background-color: black;
+    margin: auto;
+    text-shadow:    -5px 5px 0 blue,
+                    5px 5px 0 blue,
+                    5px -5px 0 blue,
+                    -5px -5px 0 blue
 
 }
 
+.main{
+    display: flexbox;
+    width: auto;
+}
+
 body{
-    background-image: url(Assets/Fondo_pokemon.jpg);
+    background-color: rgb(55, 55, 55);
     display: block;
-    font-family: arcade;
+    font-family: 'Orbitron', sans-serif;;
 }
 
 
@@ -45,7 +56,8 @@ body{
     width: 375px;
     background-color: white;
     border-radius: 5%; 
-    z-index: 1; 
+    z-index: 1;
+    margin: auto;
 }
 
 .pokemon{
@@ -99,7 +111,7 @@ div .contenedorBuscar{
     background-color: rgb(5, 47, 5);
     font-size: 22px;
     outline: auto;
-    font-family: arcade;
+    font-family: 'Orbitron', sans-serif;;
     
 }
 
@@ -107,7 +119,13 @@ div .contenedorBuscar{
     color: white;
     text-align: center;
     opacity: 30%;
-    font-family: arcade;
+    font-family: 'Orbitron', sans-serif;;
+    white-space: pre-line;
+    position: relative;    
+}
+
+.tipo {
+    margin: 0px;
 }
 
 .stats{
@@ -115,7 +133,11 @@ div .contenedorBuscar{
     list-style: none;
     width: 150px;
     height: 200px;
-    padding: 5px;   
+    padding: 5px;
+    top: 5px;   
+}
+.stats p {
+    margin: 5px;
 }
 
 div .contenedorBoton{
@@ -132,7 +154,7 @@ div .contenedorBoton{
     background-color: rgb(5, 47, 5);
     font-size: 15px;
     border: solid white;
-    font-family: arcade;
+    font-family: 'Orbitron', sans-serif;;
 }
 
 button{
